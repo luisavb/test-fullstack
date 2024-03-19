@@ -1,41 +1,39 @@
-# Teste Fullstack: Aplicativo de Gerenciamento de Clientes
+<h1>Teste Fullstack: Aplicativo de Gerenciamento de Clientes</h1>
 
-## Descrição:
+<h2> Tecnologias Utilizadas </h2>
 
-Neste desafio, você deverá desenvolver um aplicativo fullstack que permita aos usuários visualizar e criar clientes. O aplicativo consiste em duas partes: o frontend e o backend. O frontend será responsável pela interface do usuário e a comunicação com a API. O backend será responsável pelo armazenamento e gerenciamento dos dados dos clientes.
++ *Docker*, para a conteinerização da aplicação;
++ *ESLint*, para padronização e correção do código;
++ *Git*, para versionamento;
++ *VS Code*, para edição do código;
++ *Node.js*, para execução de testes e instalação de pacotes de bibliotecas;
++ *SQLite*, para criação de uma API simples com somente uma tabela no banco de dados;
++ *Jest*, para realizar tests no backend;
++ *TypeScript*, para tipagem da linguagem tanto front quanto do back;
++ *Vite React*, framework para o desenvolvimento do frontend;
++ *Flowbite Tailwind*, library para estilização;
 
-## Requisitos do Frontend:
+<h2>Como usar</h2>
 
-1. Exibir uma listagem de clientes contendo todas as informações conforme o layout fornecido.
-2. Permitir a criação de um novo cliente através de um formulário.
-3. Na tela de edição, fornecer alertas para o usuário em caso de dados inválidos.
-4. Realizar validação de CPF e telefone na tela de edição para garantir dados corretos e consistentes.
-5. Comunicar-se com a API para obter os dados dos clientes cadastrados.
+ 1 - Na pasta App inicie o Docker Compose:
+docker-compose up --build 
 
-## Requisitos do Backend:
+ 2 - Abra http://localhost:3001/
+ 
+![](./imgs/pagina-clientes.png)
 
-Criar uma API que ofereça endpoints para:
+![](./imgs/uol.gif)
 
-1. Obter a listagem de clientes cadastrados.
-2. Cadastrar um novo cliente com informações válidas.
-3. Atualizar informações de cliente existente.
-4. Armazenar os dados do cliente de forma persistente, com sugestão de uso do SQLite para essa finalidade.
+<h3>Para utilizar o repositório no desenvolvimento, siga os passos abaixo:</h3>
 
-## Requisitos de Qualidade de Código:
+- Para instalar as dependências e colocar em desenvolvimento o Frontend:
+Na pasta do Frontend:
+`npm install`  `npm run start`
 
-Escreva um código limpo, legível e bem organizado.
-Adote boas práticas de desenvolvimento e arquitetura.
+- Para instalar as dependências e colocar em desenvolvimento o Backend:
+Na pasta do backend:
+`npm install`  `npm run dev`
 
-## Itens Desejáveis (opcional):
-
-- Testes unitários
-- Bibliotecas ou frameworks adicionais
-
-## Telas:
-
-- [Tela Inicial](https://test-frontend-uolpp.web.app/assets/images/tela-inicial.jpg)
-- [Tela de Edição](https://test-frontend-uolpp.web.app/assets/images/tela-edicao.jpg)
-
-## Instruções Finais:
-
-Após concluir o desafio, crie um pull request neste repositório com duas pastas separadas: uma contendo o projeto frontend e outra com o projeto backend, para que possamos avaliar seu trabalho. Boa sorte!
+- Para fazer os testes do Backend:
+Na pasta do backend:
+`npm run test`
