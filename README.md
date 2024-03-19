@@ -15,8 +15,8 @@
 
 <h2>Como usar</h2>
 
- 1 - Na pasta App inicie o Docker Compose:
-docker-compose up --build 
+ 1 - Coloque o arquivo docker-compose.yml dentro da pasta App e inicie o Docker:
+`docker-compose up --build` 
 
  2 - Abra http://localhost:3001/
  
